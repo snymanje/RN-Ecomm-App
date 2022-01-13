@@ -26,9 +26,7 @@ const firebaseConfig = {
   appId: '1:462219834253:web:8f7592a5defebfa35003c4',
 };
 
-if (!firebase) {
-  firebase.initializeApp(firebaseConfig);
-}
+firebase.initializeApp(firebaseConfig);
 
 export default function App() {
   const [oswaldLoaded] = useOswald({
