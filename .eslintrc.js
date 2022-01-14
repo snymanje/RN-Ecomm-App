@@ -27,5 +27,6 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'react/function-component-definition': 'off',
     'react/style-prop-object': 'off',
+    'react/prop-types': 'off',
   },
 };

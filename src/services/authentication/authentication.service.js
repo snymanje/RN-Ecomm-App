@@ -1,4 +1,9 @@
-import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
+import {
+  getAuth,
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  signOut,
+} from 'firebase/auth';
 
 export const loginRequest = (email, password) => {
   const auth = getAuth();
@@ -8,4 +13,9 @@ export const loginRequest = (email, password) => {
 export const registerRequest = (email, password) => {
   const auth = getAuth();
   return createUserWithEmailAndPassword(auth, email, password);
+};
+
+export const signOutRequest = () => {
+  const auth = getAuth();
+  signOut(auth);
 };
